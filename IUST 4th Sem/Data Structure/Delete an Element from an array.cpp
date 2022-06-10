@@ -7,7 +7,12 @@ int main() {
     cout<<"Enter the Number of Elements in Array : ";
     cin>>n;
     
-    cout<<"Enter the Elements of Array : ";ent to Delete : ";
+    cout<<"Enter the Elements of Array : ";
+    for(i=0; i<n; i++){
+       cin>>arr[i];
+    }
+    
+    cout<< "Enter the Element to Delete : ";
     cin >> del;
     
     for(i=0; i<n; i++){
