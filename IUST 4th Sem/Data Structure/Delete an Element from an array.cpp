@@ -12,7 +12,7 @@ int main() {
        cin>>arr[i];
     }
     
-    cout<< "Enter the Element to Delete : ";
+    cout<< "Enter the Position of Element to Delete : ";
     cin >> del;
     
     for(i=0; i<n; i++){
