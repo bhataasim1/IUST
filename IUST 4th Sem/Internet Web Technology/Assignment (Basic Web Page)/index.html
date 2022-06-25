@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<head>
+    <title>First Webpage</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'popins', sans-serif;
+            font-size: 20px;
+        }
+        body{
+            min-height: 100vh;
+            background: linear-gradient(#2b1055, #7597de);
+        }
+        header{
+            position: absolute;
+            top: 0;
+            left: 0%;
+            width: 100%;
+            padding: 30px 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 10000;
+        }
+        header .logo {
+            color: white;
+            font-weight: 700;
+            font-size: 35px;
+        }
+        header h1{
+            font-size: 2em;
+            color: white;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        header ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        header ul li {
+            list-style: none;
+            margin-left: 20px;
+        }
+        header ul li a {
+            padding: 10px 15px;
+            color: white;
+            border-radius: 20px;
+        }
+        header ul li a:hover,
+        header ul li a.active {
+            background-color: white;
+            color: #2b1055;
+        }
+        .table{
+            text-align: center;
+            padding: 25px;
+            margin-left: 30px;
+            margin-right: 30px;
+
+        }
+        .table, tr, td{
+            border: 3px solid burlywood;
+            border-radius: 20px;
+            border-collapse: collapse;
+        }
+        .table td:hover{
+            background-color: red;
+            color: white;
+        }
+        th, td{
+            padding: 5px;
+        }
+        .sec{
+            position: relative;
+            padding: 100px;
+            text-align: center;
+
+        }
+        .sec h1{
+            position: relative;
+            text-align: center;
+            margin-top: 40px;
+            font-size: 40px;
+            font-weight: 700;
+            color: red;
+            
+        }
+        .sec h2{
+            position: relative;
+            margin-top: 20px;
+            margin-left: 270px;
+            margin-right: 270px;
+            font-size: 30px;
+            font-weight: 800;
+            font-family: 'Times New Roman', Times, serif;
+            color: #2b1055;
+            background-color: white;
+            border: 3px solid burlywood;
+            border-radius: 20px;
+            cursor: pointer;
+            
+        }
+        .sec h2:hover{
+            background-color: red;
+            color: white;
+            -webkit-transition: color 2s ease-out;
+            -moz-transition: color 2s ease-out;
+            -o-transition: color 2s ease-out;
+            transition: color 2s ease-out;
+        }
+        .sec h3{
+            position: relative;
+            margin-top: 3px;
+            font-size: 25px;
+            font-weight: 800;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: rgb(223, 51, 165);    
+        }
+        .sec h4{
+            position: relative;
+            margin-top: 20px;
+            font-size: 25px;
+            font-weight: 800;
+            font-family: 'Times New Roman', Times, serif;
+            color: white;
+        }
+        .sec p{
+            margin-top: 20px;
+            padding: 5px;
+            font-size: 25px;
+            font-weight: 500;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: white;
+            word-spacing: 2px;
+        }
+        .sec mark{
+            position: relative;
+            text-align: center;
+            font-size: 40px;
+            font-weight: 700;
+            border-radius: 15px;
+            
+        }  
+        #active{
+            background-color: white;
+            color: #2b1055;
+            border-radius: 20px;
+        }
+        #cap{
+            margin-bottom: 10px;
+            color: #2b1055;
+            background-color: white;
+            border: 3px solid burlywood;
+            border-radius: 20px;
+            
+        }
+        #cap:hover{
+            background-color: red;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+    <body>
+        <header>
+            <h1><a href="#" class="logo">MY WEBSITE</a></h1>
+            <ul>
+                <li><a href="#" class="active">Home</li></a>
+                <li><a href="#">About</li></a>
+                <li><a href="#">Contact</li></a>
+            </ul>
+        </header>
+        <section class="sec">
+            <h1>Welcome to <mark>MY WEBSITE</mark></h1>
+            <h2>Islamic University of Science and Technology</h2>
+            <h3>Department of Computer Science and Engineering</h3>
+            <h4>Assignment of IWT (Basic Web Page)</h4>
+            <p><i>Design a Basic Web page</i><br><b>Teacher : Snobar mam</b> <br><b>Student Name: Aasim Ashraf</b></p>
+        </section>
+        <div class="table" id="table">
+            <caption><h2 id="cap">Details of Students</h2></caption>
+                    <table style="width: 100%;">
+                        <tr>
+                            <th id="active">Name</th>
+                            <th id="active">Roll No</th>
+                            <th id="active">Branch</th>
+                            <th id="active">Semester</th>
+                        </tr>
+                        <tr>
+                            <td>Aasim Ashraf</td>
+                            <td>LE-63</td>
+                            <td>CSE</td>
+                            <td>4th</td>
+                        </tr>
+                        <tr>
+                            <td>Aasim Ashraf</td>
+                            <td>LE-63</td>
+                            <td>CSE</td>
+                            <td>4th</td>
+                        </tr>
+                        <tr>
+                            <td>Aasim Ashraf</td>
+                            <td>LE-63</td>
+                            <td>CSE</td>
+                            <td>4th</td>
+                        </tr>
+                        <tr>
+                            <td>Aasim Ashraf</td>
+                            <td>LE-63</td>
+                            <td>CSE</td>
+                            <td>4th</td>
+                        </tr>
+                    </table>
+        </div>
+    </body>
+</head>
+
+</html>
