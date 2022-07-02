@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Bhat Aasim">
+    <title>First Webpage</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'popins', sans-serif;
+            font-size: 20px;
+        }
+        body{
+            min-height: 100vh;
+            background: linear-gradient(#2b1055, #7597de);
+        }
+        header{
+            position: absolute;
+            top: 0;
+            left: 0%;
+            width: 100%;
+            max-width: fit-content;
+            padding: 30px 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 10000;
+        }
+        header .logo {
+            color: white;
+            font-weight: 700;
+            font-size: 35px;
+        }
+        header h1{
+            font-size: 2em;
+            color: white;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        header ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        header ul li {
+            list-style: none;
+            margin-left: 20px;
+        }
+        header ul li a {
+            padding: 10px 15px;
+            color: white;
+            border-radius: 20px;
+        }
+        header ul li a:hover,
+        header ul li a.active {
+            background-color: white;
+            color: #2b1055;
+        }
+        .table{
+            text-align: center;
+            padding: 25px;
+            margin-left: 30px;
+            margin-right: 30px;
+
+        }
+        .table, tr, #tab{
+            border: 3px solid burlywood;
+            border-radius: 20px;
+            border-collapse: collapse;
+        }
+        .table td:hover{
+            background-color: red;
+            color: white;
+        }
+        th, td{
+            padding: 5px;
+        }
+        .sec{
+            position: relative;
+            padding: 100px;
+            text-align: center;
+
+        }
+        .sec h1{
+            position: relative;
+            text-align: center;
+            margin-top: 40px;
+            font-size: 40px;
+            font-weight: 700;
+            color: red;
+            
+        }
+        .sec h2{
+            position: relative;
+            margin-top: 20px;
+            margin-left: 270px;
+            margin-right: 270px;
+            font-size: 30px;
+            font-weight: 800;
+            font-family: 'Times New Roman', Times, serif;
+            color: #2b1055;
+            background-color: white;
+            border: 3px solid burlywood;
+            border-radius: 20px;
+            cursor: pointer;
+            
+        }
+        .sec h2:hover{
+            background-color: red;
+            color: white;
+            -webkit-transition: color 2s ease-out;
+            -moz-transition: color 2s ease-out;
+            -o-transition: color 2s ease-out;
+            transition: color 2s ease-out;
+        }
+        .sec h3{
+            position: relative;
+            margin-top: 3px;
+            font-size: 25px;
+            font-weight: 800;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: rgb(223, 51, 165);    
+        }
+        .sec h4{
+            position: relative;
+            margin-top: 20px;
+            font-size: 25px;
+            font-weight: 800;
+            font-family: 'Times New Roman', Times, serif;
+            color: white;
+        }
+        .sec p{
+            margin-top: 20px;
+            padding: 5px;
+            font-size: 25px;
+            font-weight: 500;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: white;
+            word-spacing: 2px;
+        }
+        .sec mark{
+            position: relative;
+            text-align: center;
+            font-size: 40px;
+            font-weight: 700;
+            border-radius: 15px;
+            
+        }  
+        #active{
+            background-color: white;
+            color: #2b1055;
+            border-radius: 20px;
+        }
+        #cap{
+            margin-bottom: 10px;
+            color: #2b1055;
+            background-color: white;
+            border: 3px solid burlywood;
+            border-radius: 20px;
+            
+        }
+        #cap:hover{
+            background-color: red;
+            color: white;
+            cursor: pointer;
+        }
+        #image{
+            max-width: 100%;
+            margin-top: 10px;
+        }
+        #tt{
+            padding: 10px;
+            color: #2b1055;
+            text-align: center;
+            border: 2px solid black;
+            background-color: white;
+            border-radius: 20px;
+            margin: 10px 270px 10px 270px;
+        }
+        #table2{
+            text-align: center;
+            padding: 25px;
+            margin: 0px 30px 0px 30px;
+        }
+        #table2, tr, th, td{
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+
+    </style>
+    <body>
+        <header>
+            <h1><a href="#" class="logo">MY WEBSITE</a></h1>
+            <ul>
+                <li><a href="#" class="active">Home</li></a>
+                <li><a href="#">About</li></a>
+                <li><a href="form.html">Contact</li></a>
+            </ul>
+        </header>
+        <section class="sec">
+            <h1>Welcome to <mark>MY WEBSITE</mark></h1>
+            <h2>Islamic University of Science and Technology</h2>
+            <h3>Department of Computer Science and Engineering</h3>
+           <div id="image">
+            <img src="https://www.iust.ac.in/images/h-downloads.jpg" alt="IUST">
+           </div> 
+            <h4>Assignment of IWT (Basic Web Page)</h4>
+            <p><i>Design a Basic Web page</i><br><b>Teacher : Snobar mam</b> <br><b>Student Name: Aasim Ashraf</b></p>
+        </section>
+        <div class="table">
+            <caption><h2 id="cap">Details of Students</h2></caption>
+                    <table style="width: 100%;">
+                        <tr>
+                            <th id="active">Name</th>
+                            <th id="active">Roll No</th>
+                            <th id="active">Branch</th>
+                            <th id="active">Semester</th>
+                        </tr>
+                        <tr>
+                            <td id="tab">Aasim Ashraf</td>
+                            <td id="tab">LE-63</td>
+                            <td id="tab">CSE</td>
+                            <td id="tab">4th</td>
+                        </tr>
+                        <tr>
+                            <td id="tab">Aasim Ashraf</td>
+                            <td id="tab">LE-63</td>
+                            <td id="tab">CSE</td>
+                            <td id="tab">4th</td>
+                        </tr>
+                        <tr>
+                            <td id="tab">Aasim Ashraf</td>
+                            <td id="tab">LE-63</td>
+                            <td id="tab">CSE</td>
+                            <td id="tab">4th</td>
+                        </tr>
+                        <tr>
+                            <td id="tab">Aasim Ashraf</td>
+                            <td id="tab">LE-63</td>
+                            <td id="tab">CSE</td>
+                            <td id="tab">4th</td>
+                        </tr>
+                    </table>
+        </div>
+    <section>
+        <h1 id="tt">Time Table Assignment</h1>
+        <div id="table2">
+            <caption>Write the necessary HTML code for your own study timetable.</caption>
+            <table>
+                <tr>
+                    <th> </th>
+                    <th> </th>
+                    <th colspan="3">Morning</th>
+                    <th>Lunch</th>
+                    <th colspan="4">Afternoon</th>
+                    <th colspan="3">Evening</th>
+                </tr>
+                <tr>
+                    <td> </td>
+                    <td> </td>
+                    <td>9 - 10 AM</td>
+                    <td>10 - 11 AM</td>
+                    <td>11 - 12 AM</td>
+
+                    <td>1 - 2 PM</td>
+
+                    <td>2 - 3 PM</td>
+                    <td>3 - 4 PM</td>
+                    <td>4 - 5 PM</td>
+                    <td>5 - 6 PM</td>
+
+                    <td>6 - 7 PM</td>
+                    <td>7 - 8 PM</td>
+                    <td>8 - 9 PM</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Work <td>Monday</td>
+                    <td colspan="3">Development Meeting</td>
+                    <td></td>
+                    <td colspan="3">Client Meeting</td>
+                    <td>Commute</td>
+                    <td colspan="3">Free</td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td colspan="3">In Office</td>
+                    <td></td>
+                    <td colspan="7">Client Meeting</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Lecture <td>Wednesday<td colspan="3">CSC205</td>
+                    <td></td>
+                    <td colspan="7">Prepration</td>
+                </tr>
+                <tr>
+                    <td>Thursday <td colspan="3">MAM200</td>
+                    <td></td>
+                    <td colspan="3">Tutorials for MAM200 <td colspan="4">Free</td>
+                </tr>
+                <tr>
+                    <td>Research <td>Friday <td colspan="3">Research</td>
+                    <td></td>
+                    <td colspan="7">Research</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    </body>
+</head>
+
+</html>

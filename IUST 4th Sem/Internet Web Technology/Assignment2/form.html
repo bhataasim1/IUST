@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Bhat Aasim">
+    <title>Contact Form</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'popins', sans-serif;
+            font-size: 20px;
+        }
+        body{
+            min-height: 100vh;
+            background: linear-gradient(#55e96d, #e99292);
+            text-align: center;
+        }
+        .form{
+            max-width: fit-content;
+            width: 100%;
+            padding: 10px;
+            margin: 0 auto;
+            align-items: center;
+        }
+        #contact {
+            background-color: transparent;
+            padding: 20px;
+            margin: 50px 0;
+        }
+        #contact button {
+            border-radius: 20px 0px 20px 0px;
+            background-color: blue;
+            color: white;
+            padding: 10px;
+            font-size: 20px;
+            font-weight: 500;
+        }
+        #contact button:hover {
+            background-color: rgba(43, 255, 0, 0.8);
+            color: blue;
+            transition: 0.5s ease-out;
+        }
+    </style>
+</head>
+<body>
+    <div class="form">
+        <h1 style="text-align: center;">Lets Create a Form</h1>
+        <form id="contact" action="#">
+            <label for="name">Enter Your Name</label><br>
+            <input type="text" name="name" placeholder="Enter your name"><br>
+
+            <label for="email">Enter your E-mail</label><br>
+            <input type="email" name="email" placeholder="Enter your Email"><br>
+
+            <label for="password">Enter your password</label><br>
+            <input type="password" name="pass" placeholder="Enter your Password"><br>
+            
+            <label for="Gender">Gender :</label><br>
+            <input type="radio" name="gender">Male <br>
+            <input type="radio" name="gender">Female <br>
+            <input type="radio" name="gender">Trans-Gender <br>
+
+            <label for="fav">Favourite Colors :</label><br>
+            <input type="checkbox" name="red">Red <br>
+            <input type="checkbox" name="Green">Green <br>
+            <input type="checkbox" name="Blue">Blue <br>
+            <input type="checkbox" name="white">White <br>
+            <input type="checkbox" name="Orange">Orange <br>
+
+            <label for="book">Select Favourite Book</label>
+            <select name="book">
+                <option value="Java">Java</option>
+                <option value="c++">c++</option>
+                <option value="IWT">IWT</option>
+                <option value="Math">Math</option>
+            </select><br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
