@@ -77,9 +77,9 @@ void insert()
     while (trav -> data != value)
     {
         trav = trav -> next;
-        temp -> next = trav -> next;
-        trav -> next = temp;
     }
+    temp -> next = trav -> next;
+    trav -> next = temp;
 }
 
 //Delete any Element from Linked List
