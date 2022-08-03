@@ -88,7 +88,19 @@ void isPrime()
 {
     Node *trav = Head;
     
-    //Incomplete
+    while(trav != NULL)
+    {
+        bool isPrime = true;
+        for(int i=2; i< (trav -> data) -1; i++)
+        {
+            if((trav->data) % 2 == 0)
+                isPrime = false;
+        }
+        if(isPrime)
+            cout << trav -> data << endl;
+        
+        trav = trav -> next;
+    }
 
 }
 
