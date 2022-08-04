@@ -42,7 +42,7 @@ void create()
         else{
                 tail -> next = temp;
                 tail = temp;
-                tail -> next = temp;
+                tail -> next = head;
         }
     }
 }
