@@ -21,7 +21,7 @@ string Infix_to_Postfix(string s)
 
     for(int i = 0; i < s.length(); i++)
     {
-        if(s[i] >= '0' && s[i] <= '9') // b/w 0 - 9 print them (store in result)
+        if(s[i] >= '0' && s[i] <= '9' || s[i] >= 'a' && s[i] <= 'z') // b/w 0 - 9 print them (store in result)
         {
             result += s[i];
         }
