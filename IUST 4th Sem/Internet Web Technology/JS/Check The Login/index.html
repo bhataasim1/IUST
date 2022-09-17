@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let userName = prompt("Enter Username");
+        if(userName === 'Admin')
+        {
+            let passWord = prompt("Enter Password");
+            if(passWord === 'Aasim')
+                alert(`Welcome ${userName}`);
+            else if(passWord === '' || passWord === null)
+                alert("Canceled");
+            else
+                alert("Wrong Password");
+        }
+        else if(userName === '' || userName === null)
+            alert("Canceled");
+        else
+            alert("User Not Found !!");
+    </script>
+</body>
+</html>
