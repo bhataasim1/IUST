@@ -6,6 +6,6 @@ All are Comments;
 '
 
 
-echo "Sum of Two Numbers"
+echo "Multiplication of Two Numbers"
 ((Mul=10*20))
 echo $Mul 
