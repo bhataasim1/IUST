@@ -16,7 +16,7 @@ void Enqueue(int item)
 int Dequeue()
 {
     if(Front <= Rear)
-        return Queue[Front++];
+        return Queue[Front--];
     else
         return -1;
 }
