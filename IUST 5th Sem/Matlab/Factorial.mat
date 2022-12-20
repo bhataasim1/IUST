@@ -1,0 +1,4 @@
+Fact = 1;
+for i = 1:7
+Fact = Fact * i;
+end
