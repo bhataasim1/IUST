@@ -1,0 +1,8 @@
+% Name Aasim Ashraf
+
+a(1) = 0;
+a(2) = 1;
+n = 10 -1;
+for i = 3:n
+a(i) = a(i -1) + a(i -2) ;
+end
