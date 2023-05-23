@@ -1,4 +1,3 @@
-import java.lang.*;
 import java.util.Scanner;
 
 class sum
