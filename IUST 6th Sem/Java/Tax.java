@@ -1,5 +1,8 @@
 import java.util.Scanner;
 public class Tax {
+
+    // Name : Aasim Ashraf
+    // Roll NO : CSE-20-LE-63
     public static void main(String[] args) {
         
         Scanner sc = new Scanner(System.in);
@@ -28,5 +31,7 @@ public class Tax {
         }
 
         System.out.print("Tax to be Paid : " + tax);
+        System.out.print("Name : Aasim Ashraf");
+        System.out.print("Roll No : CSE-20-63");
     }
 }
