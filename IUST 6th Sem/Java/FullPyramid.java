@@ -1,5 +1,9 @@
 import java.util.Scanner;
 public class FullPyramid {
+
+    // Name : Aasim Ashraf
+    // Roll No: CSE-20-LE-63
+
     public static void main(String[] args) {
         
         Scanner sc = new Scanner(System.in);
@@ -17,5 +21,7 @@ public class FullPyramid {
             
             System.out.println();
         }
+        System.out.print("\nName : Aasim Ashraf");
+        System.out.print("\nRoll No: CSE-20-LE-63");
     }
 }
