@@ -1,7 +1,14 @@
+import java.util.Scanner;
+
 public class StringToLowerCase {
     public static void main(String[] args) {
-        String s = "I AM STRING";
-        System.out.println(s);
-        System.out.println(s.toLowerCase());
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter a string: ");
+        String str = sc.nextLine();
+        //String s = "I AM STRING";
+        System.out.println(str);
+        System.out.println(str.toLowerCase());
     }
 }
