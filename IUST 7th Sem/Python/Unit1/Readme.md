@@ -135,6 +135,7 @@ y = "Hello, World!"
 
 # Python Blocks
 Python uses Indentation to define blocks of code. Blocks are group of statements that are executed together. Proper indentation is compulsory in python as it defines the beginning and end of blocks eg loops, conditional statements and functions etc.
+
     ```python
     x = 5
     if x > 3:
@@ -142,18 +143,23 @@ Python uses Indentation to define blocks of code. Blocks are group of statements
     else:
         print("x is less than 3")
     ```
+
     OR
+
     ```python
     x = 5
     for i in range(x):
         print(i)
     ```
+
     OR
+
     ```python
     def myFunction():
         print("Hello, World!")
     myFunction()
     ```
+    
 
 
 # List
