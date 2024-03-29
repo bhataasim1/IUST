@@ -33,3 +33,26 @@ print("Dimension = ",newArray.ndim)
 
 a = np.array([1, 2, 3, 4])
 print(a[1] + a[3])
+
+
+b = np.array([1,2,3,4,5,6,7,8,9,10, 11, 12])
+bReshape = b.reshape(3, 2, 2)
+print(bReshape)
+
+bReshape = b.reshape(2, 3, 2)
+print(bReshape)
+
+c = np.array([[[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12]]])
+print(c.ndim)
+for i in c:
+    for j in i:
+        for k in j:
+            print("Item ",k)
+
+for i in np.nditer(c):
+    print("Item (using nditer) ",i)
+
+
+print(c)
+for index, item in np.ndenumerate(c):
+    print("Index ",index, "Item ",item)
