@@ -1,7 +1,0 @@
-if
-elseif
-else
-int
-float
-double
-char
